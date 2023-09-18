@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,15 +46,14 @@
     </aside>
 
     <!-- Criando menu mobile -->
-    <button class="button-mobile">
+    <button class="button-mobile" onclick="toggleMenu()">
         <i class="material-symbols-outlined">menu</i>
         <span>Menu</span>
     </button>
-    <nav class="menu-mobile">
-        <button class="button-close">
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="button-close" onclick="toggleMenu()">
             <span >
                 <i class="material-symbols-outlined">close</i>
-                
             </span>
         </button>
 
@@ -93,6 +92,6 @@
     </main>
 
 
-
+    <script src="script.js"></script>
 </body>
 </html>

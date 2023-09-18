@@ -5,11 +5,16 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: #121212;
+    color: #fefefe;
+    background-color: #0f1216;
+}
+
+.material-symbols-outlined{
     color: #fefefe;
 }
 
 .sidebar{
+    background-color: #181c23;
     position: fixed;
     top: 0;
     display: flex;
@@ -18,7 +23,7 @@ body{
     width: 180px;
     height: 100%;
     padding: 40px 10px 30px 10px;
-    border-right: 1px solid #2f3336;
+    border-right: 1px solid #181c23;
     transition: all 0.35s;
 }
 
@@ -28,8 +33,8 @@ body{
 }
 
 .logo-img{
-    width: 48px;
-    min-height: 48px;
+    width: 44px;
+    min-height: 44px;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.4s;
