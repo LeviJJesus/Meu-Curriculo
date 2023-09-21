@@ -1,16 +1,55 @@
 *{
     box-sizing: border-box;
+    color: #fefefe;
+}
+
+html{
+    font-family: arial;
+    font-size: 62.5%;
 }
 
 body{
     margin: 0;
     font-family: sans-serif;
-    color: #fefefe;
     background-color: #0f1216;
 }
 
 .material-symbols-outlined{
     color: #fefefe;
+}
+
+/* Ajustes de fontes */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p{
+    line-height: 1.7;
+}
+
+a{
+    color:#a6f750;
+}
+
+a:hover{
+    color: #7ebb3d;
+}
+
+.destaque{
+    color: #a6f750;
 }
 
 .sidebar{
@@ -91,14 +130,34 @@ body{
 }
 
 .main{
-    margin-left: 190px;
-    margin-right: 6px;
-    overflow: hidden;
+    margin-left: 220px;
+    margin-right: 480px;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.sobre-mim, .certificados, .educacao, .interesses{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ada-tech{
+    /* border: 1px red solid; */
+    margin-bottom: 200px;
+    line-height: 1.5;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
 }
 
 /* Ajustando sidebar com apenas os icones */
 
-@media (width < 920px){
+@media (width < 1020px){
     .sidebar{
         width: 72px;
     }
@@ -114,7 +173,14 @@ body{
 
     .main{
         transition: margin 0.4s;
-        margin-left: 78px;
+        margin-left: 108px;
+        margin-right: 20px;
+    }
+
+    .ada-tech{
+        /* border: 1px red solid; */
+        margin-bottom: 60px;
+        line-height: 1.5;
     }
 }
 
@@ -183,6 +249,16 @@ body{
     }
 
     .main{
-        margin-left: 6px;
+        margin-left: 20px;
+    }
+
+    .sobre-mim{
+        display: flex;
+        justify-content: initial;
+    }
+
+    .ada-tech{
+        /* border: 1px red solid; */
+        margin-bottom: 250px;
     }
 }
